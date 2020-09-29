@@ -8,7 +8,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-help">
-        <div className="info-icon">
+        <div className="circle-icon">
           <i className="fas fa-info info-circle" />
         </div>
         <span className="header-mobile">Ajuda</span>
@@ -19,7 +19,7 @@ function Header() {
       </div>
       <div className="header-account">
         <div>
-          <div className="user-icon">
+          <div className="circle-icon user-icon">
             <i className="fas fa-user" />
           </div>
           <span className="header-account-text">Conta</span>

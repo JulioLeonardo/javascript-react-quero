@@ -31,8 +31,7 @@
   color: var(--blue-secondary);
 }
 
-.info-icon,
-.user-icon {
+.circle-icon {
   height: 30px;
   width: 30px;
   padding: 10px;
@@ -49,8 +48,7 @@
   margin: auto;
 }
 
-.info-icon i,
-.user-icon i {
+.circle-icon i {
   font-size: 15px;
 }
 
