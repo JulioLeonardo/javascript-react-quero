@@ -1,0 +1,145 @@
+.header {
+  display: grid;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.header-desktop {
+  display: none;
+}
+
+.header-help,
+.header-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-help {
+  border-right: 3px solid #f0f0f0;
+}
+
+.header-account {
+  border-left: 3px solid #f0f0f0;
+}
+
+.header-help span,
+.header-account span {
+  font-weight: bold;
+  color: var(--blue-secondary);
+}
+
+.info-icon,
+.user-icon {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2.4px;
+  border-radius: 50px;
+  border-color: var(--blue-secondary);
+}
+
+.user-icon {
+  margin: auto;
+}
+
+.info-icon i,
+.user-icon i {
+  font-size: 15px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo img {
+  padding: 5px;
+  height: 50px;
+}
+
+.header-account-user {
+  display: none;
+}
+
+.navigation {
+  width: 4fr;
+  height: 30px;
+  grid-column: 1 / -1;
+  background: var(--blue-primary);
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-shadow: inset 0px 11px 8px -10px rgb(0, 0, 0, 0.34);
+  -moz-box-shadow: inset 0px 11px 8px -10px rgb(0, 0, 0, 0.34);
+  box-shadow: inset 0px 11px 8px -10px rgb(0, 0, 0, 0.34);
+}
+
+.menu-btn {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-weight: bold;
+}
+
+.navigation h3,
+.navigation button {
+  padding: 10px;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.navigation button i {
+  color: white;
+  font-size: 11px;
+  margin-left: 4px;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 5px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  right: 0;
+}
+
+.menu:active .dropdown {
+  display: block;
+}
+
+.breadcrumbs {
+  grid-column: 1 / -1;
+}
+
+.breadcrumbs i {
+  padding: 10px;
+  margin: 10px 0;
+}
