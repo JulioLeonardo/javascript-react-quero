@@ -32,6 +32,7 @@ body {
   font-family: 'Roboto', Arial, Helvetica, 'Open Sans', sans-serif;
   font-size: 14px;
   color: var(--black-text);
+  background: var(--grey-background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -39,6 +40,10 @@ body {
 a,
 button {
   cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 a {

@@ -1,0 +1,39 @@
+.add-scholarship {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 22px;
+  padding: 15px;
+  padding-bottom: 25px;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.22);
+  margin-bottom: 22px;
+}
+
+.add-scholarship i {
+  width: 80px;
+  height: 80px;
+  font-size: 4.2rem;
+  border: solid 5px var(--blue-primary);
+  color: var(--blue-primary);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.add-scholarship-btn {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-weight: bold;
+}
