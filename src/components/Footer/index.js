@@ -9,7 +9,7 @@ function Footer() {
         <div className="whatsapp">
           <i className="fab fa-whatsapp" />
           <p>
-            0800 123 222
+            <strong className="whatsapp-number">0800 123 222</strong>
             <br />
             <span className="whatsapp-text mobile">
               Segunda a sexta de 8h às 22h
@@ -39,22 +39,23 @@ function Footer() {
             </span>
           </p>
         </div>
-      </div>
-      <div className="info">
-        <div className="circle-icon">
+        <div className="info">
           <i className="fas fa-info info-circle" />
+
+          <p>
+            <span className="info-text mobile">Ajuda</span>
+            <span className="info-text desktop">
+              <strong>Central de ajuda</strong>
+              <br />
+              Encontre todas as respostas
+            </span>
+          </p>
         </div>
-        <p>
-          <span className="info-text mobile">Ajuda</span>
-          <span className="info-text desktop">
-            <strong>Central de ajuda</strong>
-            <br />
-            Encontre todas as respostas
-          </span>
-        </p>
       </div>
       <div className="signature">
-        Feito com <i className="far fa-heart" /> pela Quero Educação
+        <p>
+          Feito com <i className="far fa-heart" /> pela Quero Educação
+        </p>
       </div>
     </footer>
   );
