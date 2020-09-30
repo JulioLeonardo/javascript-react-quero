@@ -1,0 +1,13 @@
+#main {
+  width: 90%;
+  margin: auto;
+}
+
+.main-title {
+  padding-bottom: 15px;
+}
+
+.main-description {
+  line-height: 22px;
+  margin-bottom: 22px;
+}

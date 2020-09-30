@@ -1,0 +1,17 @@
+.scholarships-filter {
+  border: solid 1px var(--blue-secondary);
+  border-radius: 4px;
+  margin-bottom: 22px;
+  font-weight: bold;
+  color: var(--blue-secondary);
+  text-align: center;
+  line-height: 25px;
+}
+
+.scholarships-filter a {
+  font-weight: 900;
+}
+
+.scholarships-filter li:nth-last-child(-n + 2) {
+  border-top: solid 1px var(--blue-secondary);
+}

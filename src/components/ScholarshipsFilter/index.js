@@ -1,12 +1,23 @@
 import React from 'react';
 
+import './styles.css';
+
 function ScholarshipsFilter() {
   return (
-    <div className="scholarships-filter">
+    <div id="filter" className="scholarships-filter">
       <ul>
-        <li>Todos os semestres</li>
-        <li>2° semestre de 2019</li>
-        <li>1° semestre de 2020</li>
+        <li>
+          {' '}
+          <a href="filter">Todos os semestres</a>{' '}
+        </li>
+        <li>
+          {' '}
+          <a href="filter">2° semestre de 2019</a>{' '}
+        </li>
+        <li>
+          {' '}
+          <a href="filter">1° semestre de 2020</a>{' '}
+        </li>
       </ul>
     </div>
   );

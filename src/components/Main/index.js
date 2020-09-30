@@ -4,6 +4,8 @@ import ScholarshipsFilter from '../ScholarshipsFilter';
 import ScholarshipAddBtn from '../ScholarshipAddBtn';
 import Scholarships from '../Scholarships';
 
+import './styles.css';
+
 function Main() {
   return (
     <main id="main">
