@@ -1,0 +1,245 @@
+.scholarships-modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1f2d30e0;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  overflow-y: auto;
+  left: 0;
+  margin: auto;
+  animation: fadeInFromNone 0.3s ease-in;
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.close-modal {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-weight: lighter;
+  color: white;
+  font-size: 5rem;
+  transform: rotate(45deg);
+  margin: 20px;
+  margin-right: 13px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.scholarships-modal-description {
+  margin-top: -10px;
+  font-size: 1.4rem;
+}
+.modal-content {
+  margin-top: 66px;
+  background: white;
+  text-align: left;
+  padding: 20px;
+  font-size: 1.7rem;
+  line-height: 35px;
+  z-index: 1;
+}
+
+.modal-content label {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding-bottom: 0;
+}
+
+.modal-content select {
+  height: 45px;
+  width: 100%;
+  display: block;
+  align-self: center;
+  border-radius: 4px;
+  border: solid 0.17rem rgb(216, 216, 216);
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.fieldset-label {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.input-label {
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 10px;
+  margin-right: 20px;
+}
+
+.course-price-limit {
+  font-size: 1.5rem;
+  padding-bottom: 0 !important;
+  line-height: 25px;
+  margin-top: -10px;
+}
+
+input[type='checkbox'] {
+  position: relative;
+  top: -2px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000;
+  appearance: none;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+input[type='checkbox']:checked {
+  border-color: var(--blue-primary);
+  background: var(--blue-primary);
+}
+
+input[type='checkbox']:after {
+  margin: 0 0 2px 2px;
+  color: #fff;
+  font-size: 11px;
+  content: '\2714';
+}
+
+input[type='range'] {
+  height: 15px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  margin-top: 0;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  background: var(--blue-primary);
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3.5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: var(--blue-primary);
+  border-radius: 8px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  border: 2px solid var(--blue-primary);
+  height: 24px;
+  width: 24px;
+  border-radius: 50px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+}
+
+input[type='range']:focus::-webkit-slider-runnable-track {
+  background: var(--blue-primary);
+}
+
+input[type='range']::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: var(--blue-primary);
+  border-radius: 8px;
+}
+
+input[type='range']::-moz-range-thumb {
+  border: 2px solid var(--blue-primary);
+  height: 24px;
+  width: 24x;
+  border-radius: 50px;
+  background: #fff;
+  cursor: pointer;
+}
+
+input[type='range']::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type='range']::-ms-fill-lower {
+  background: var(--blue-primary);
+  border-radius: 10px;
+}
+
+input[type='range']::-ms-fill-upper {
+  background: var(--blue-primary);
+  border-radius: 10px;
+}
+
+input[type='range']::-ms-thumb {
+  margin-top: 1px;
+  border: 2px solid var(--blue-primary);
+  height: 24px;
+  width: 24px;
+  border-radius: 50px;
+  background: #fff;
+  cursor: pointer;
+}
+
+input[type='range']:focus::-ms-fill-lower {
+  background: var(--blue-primary);
+}
+
+input[type='range']:focus::-ms-fill-upper {
+  background: var(--blue-primary);
+}
+
+.scholarships-list-header {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.scholarships-list-header-titles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scholarships-list-header-filter {
+  color: var(--blue-secondary);
+  display: flex;
+  float: right;
+  margin-top: -15px;
+}
+
+#chevron-down {
+  color: var(--blue-secondary);
+  font-size: 1.4rem;
+  height: initial;
+  width: initial;
+  border: none;
+  margin-left: 6px;
+}

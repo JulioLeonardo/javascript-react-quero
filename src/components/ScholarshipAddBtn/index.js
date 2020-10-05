@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+import ScholarshipsModal from '../ScholarshipsModal';
 import './styles.css';
 
 function ScholarshipAddBtn() {
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleShowModal = () => {
+    setShowModal(!showModal);
+  };
+
   return (
     <div className="add-scholarship">
-      <button className="add-scholarship-btn" onClick>
+      <button className="add-scholarship-btn" onClick={toggleShowModal}>
         <div className="plus-icon">
           <i className="fas fa-plus" />
         </div>
@@ -16,6 +23,7 @@ function ScholarshipAddBtn() {
         <br />
         cursos do seu interesse
       </p>
+      {showModal && <ScholarshipsModal toggleShowModal={toggleShowModal} />}
     </div>
   );
 }
